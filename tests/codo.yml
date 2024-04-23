@@ -1,0 +1,21 @@
+version:
+  src: "path:../../index.yml::version"
+  fmt: semantic
+engines:
+  -
+    key: mongo
+    url: http://localhost:9006
+migrations:
+  "2.0.0rc2":
+    up:
+      -
+        type: cmd
+        val: "make ORWYNN_MODE=prod cli.deattach-fault-tprocesses"
+    down:
+  "2.0.0rc1":
+    up:
+      -
+        type: cmd
+        val: "make ORWYNN_MODE=prod cli.populate-sensors"
+    down:
+
