@@ -7,8 +7,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-pykit = {git = "https://github.com/slimebones/pykit", rev = "0.5.1"}
 pymongo = "^4.6.3"
+ryz = "^0.12.4"
 
 
 [build-system]
